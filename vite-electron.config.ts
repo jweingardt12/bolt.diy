@@ -25,6 +25,10 @@ export default defineConfig((config) => {
     build: {
       target: 'esnext',
     },
+    server: {
+      host: '0.0.0.0', // Allow access from any host
+      port: 5173, // Optional: Specify the port
+    },
     plugins: [
       nodePolyfills({
         include: ['path', 'buffer', 'process'],
