@@ -28,6 +28,7 @@ export default defineConfig((config) => {
     server: {
       host: '0.0.0.0', // Allow access from any host
       port: 5173, // Optional: Specify the port
+      allowedHosts: true, // Allow any host
     },
     plugins: [
       nodePolyfills({
